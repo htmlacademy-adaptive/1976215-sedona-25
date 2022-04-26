@@ -10,14 +10,14 @@
   <header class="header">
     <nav class="navigation">
       <a class="navigation__logo" href="index.html">
-        <img src="img/logo.svg" width="138" height="70" alt="Логотип Седана">
+        <img src="img/logo.svg" width="185" height="96" alt="Логотип Седана">
       </a>
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="">Фото и видео</a>
+          <a class="navigation__link navigation__link--current">Фото и видео</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="form.html">Форма отзыва</a>
@@ -31,7 +31,7 @@
   <main class="main">
     <section class="greeting">
       <div class="greeting__bg">
-        <img src="img/catalog/sedona.svg" width="367" height="152" alt="СЕДОНА.">
+        <img src="img/catalog/sedona.svg" width="229" height="39" alt="СЕДОНА.">
       </div>
       <div class="greeting__description">
         <h1 class="greeting__description-title">Фото и видео</h1>
@@ -40,23 +40,62 @@
       </div>
     </section>
     <section class="catalog__products">
-      <h2 class="product__card__title">неродные просторы</h2>
-      <p>Автор фото: Борис</p>
-      <img class="product__card__image" src="img/catalog/open-spaces.jpg" width="220" height="168" alt="">
-      <h2 class="product__card__title">Местная растительность</h2>
-      <p>Автор фото: Сергей</p>
-      <img class="product__card__image" src="img/catalog/vegetation.jpg" width="220" height="168" alt="">
-      <h2 class="product__card__title">Дорога на север</h2>
-      <p>Автор фото: Петр</p>
-      <img class="product__card__image" src="img/catalog/north.jpg" width="220" height="168" alt="">
-      <h2 class="product__card__title">Мост дьявола</h2>
-      <p>Автор фото: Антон</p>
-      <img class="product__card__image" src="img/catalog/bridge.jpg" width="220" height="168" alt="">
-      <section class="interest">
+      <ul class="product__list">
+        <li class="photo-blog__post  photo-blog__post--big">
+          <img class="product__card__image" src="img/catalog/open-spaces.jpg" width="280" height="280"
+            alt="Неродные просторы">
+          <div class="photo-blog__content">
+            <div class="photo-blog__description">
+              <h2 class="photo-blog__title">Неродные просторы</h2>
+              <p>Автор фото: Борис</p>
+            </div>
+            <button>1350</button>
+          </div>
+        </li>
+        <li class="photo-blog__post">
+          <div class="photo-blog__picture-wrap">
+            <img class="product__card__image" src="img/catalog/vegetation.jpg" width="280" height="280"
+              alt="Местная растительность">
+          </div>
+          <div class="photo-blog__description">
+            <h2 class="photo-blog__title">Местная растительность</h2>
+            <p>Автор фото: Сергей</p>
+          </div>
+          <button>143</button>
+          </div>
+        </li>
+        <li class="photo-blog__post">
+          <div class="photo-blog__picture-wrap">
+            <img class="product__card__image" src="img/catalog/north.jpg" width="280" height="280"
+              alt="Дорога на север">
+          </div>
+          <div class="photo-blog__description">
+            <h2 class="photo-blog__title">Дорога на север</h2>
+            <p>Автор фото: Пктр</p>
+          </div>
+          <button>96</button>
+          </div>
+        </li>
+        <li class="photo-blog__post">
+          <div class="photo-blog__picture-wrap">
+            <img class="product__card__image" src="img/catalog/bridge.jpg" width="280" height="280" alt="Мост дьявола">
+          </div>
+          <div class="photo-blog__description">
+            <h2 class="photo-blog__title">Мост дьявола</h2>
+            <p>Автор фото: Антон</p>
+          </div>
+          <button>254</button>
+          </div>
+        </li>
+        <article class="video-blog__post">
+          <div class="video-blog__content">
+            <h2 class="video-blog__title">Все еще сомневаетесь?</h2>
+            <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
 
-        <h4>Все еще сомневаетесь?</h4>
-        <p>Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в очередной раз!</p>
-      </section>
+          <div class="video-blog__video-wrap">
+            <img class="video-blog__video" src="img/catalog/road.jpg" width="280" height="177" alt="Видео">
+
   </main>
   <footer class="footer">
     <a href="#" class="footer__hesh">#visitsedona</a>
@@ -64,26 +103,26 @@
       <li>
         <a href="#" class="social__btn social__btn--vk">
           <span class="visually-hidden">В контакте</span>
-          <img src="img/vk.svg" alt="#" width="139" height="70">
+          <img src="img/vk.svg" alt="vkontakte" width="48" height="48">
         </a>
       </li>
       <li>
         <a href="#" class="social__btn social__btn--telegram">
           <span class="visually-hidden">Телеграм</span>
-          <img src="img/telegram.svg" alt="#" width="139" height="70">
+          <img src="img/telegram.svg" alt="telegram" width="48" height="48">
         </a>
       </li>
       <li>
         <a href="#" class="social__btn social__btn--yt">
           <span class="visually-hidden">Ютуб</span>
-          <img src="img/youtube.svg" alt="#" width="139" height="70">
+          <img src="img/youtube.svg" alt="youtube" width="48" height="48">
         </a>
       </li>
     </ul>
     <div class="footer__developer">
       <p>Разработано</p>
       <a href="https://htmlacademy.ru/" class="footer__academy">
-        <img src="img/htmlacademy.svg" width="139" height="70">
+        <img src="img/htmlacademy.svg" width="26.9" height="34.1">
       </a>
     </div>
   </footer>
