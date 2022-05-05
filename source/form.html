@@ -12,31 +12,38 @@
       <a class="navigation__logo" href="index.html">
         <img src="img/logo.svg" width="185" height="96" alt="Логотип Седана">
       </a>
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link navigation__link--current">Форма отзыва</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="https://htmlacademy.ru/">Html academy</a>
-        </li>
-      </ul>
+      <button class="navigation__button" type="button">
+        <span class="visually-hidden">Открыть / Закрыть меню</span>
+      </button>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list list-reset">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="navigation__list list-reset">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current">Форма отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru/">Html academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="main">
     <section class="greeting greeting--page">
       <div class="greeting__bg">
-        <img src="img/catalog/sedona.svg" width="229" height="39" alt="СЕДОНА.">
+        <img src="img/greeting-sedona.svg" width="229" height="39" alt="СЕДОНА.">
       </div>
       <div class="greeting__description">
         <h1 class="greeting__description-title">Оставьте свой отзыв</h1>
-        <p class="greeting__description-text">Помогите нашим отелям стать лучше!<br>оставьте отзыв о них, а также
-          о<br>посещенных вами<br>достопримечательностях</p>
+        <p class="greeting__description-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях</p>
       </div>
     </section>
     <section class="form">
@@ -45,15 +52,15 @@
           <fieldset class="form__fieldset form__fieldset--data">
             <h2 class="form__fieldset-title">Представьтесь:</h2>
             <ul class="form__contact-list list-reset">
-              <li class="form__contact-item list-reset">
+              <li class="form__contact-item">
                 <label class="form__contact-label" for="name">Имя*:</label>
                 <input class="form__contact-input" id="name" type="text" name="name" value="Пётр" required>
               </li>
-              <li class="form__contact-item list-reset">
+              <li class="form__contact-item">
                 <label class="form__contact-label" for="surname">Фамилия*:</label>
                 <input class="form__contact-input" id="surname" type="text" name="surname" value="Пустота" required>
               </li>
-              <li class="form__contact-item list-reset">
+              <li class="form__contact-item">
                 <label class="form__contact-label" for="patronymic">Отчество*:</label>
                 <input class="form__contact-input" id="patronymic" type="text" name="patronymic" value="Викторович"
                   required>
@@ -63,13 +70,13 @@
           <fieldset class="form__fieldset form__fieldset--contact">
             <h2 class="form__fieldset-title">Контактная информация</h2>
             <ul class="form__contact-list list-reset">
-              <li class="form__contact-item list-reset">
+              <li class="form__contact-item">
                 <label class="form__contact-label" for="phone">Контактный телефон*:</label>
                 <div class="form__input-wrapper form__input-wrapper--phone">
                   <input class="form__contact-input" id="phone" type="text" name="phone" placeholder="Введите телефон">
                 </div>
               </li>
-              <li class="form__contact-item list-reset">
+              <li class="form__contact-item">
                 <label class="form__contact-label" for="e-mail">Электронная почта*:</label>
                 <div class="form__input-wrapper form__input-wrapper--mail">
                   <input class="form__contact-input" id="e-mail" type="text" name="e-mail" placeholder="Введите e-mail">
@@ -81,19 +88,19 @@
         <fieldset class="form__fieldset form__fieldset--feedback">
           <h2 class="form__fieldset-title form__fieldset-title--lines">Ваше общее впечатление:</h2>
           <ul class="form__options list-reset">
-            <li class="form__options-item list-reset">
+            <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="radio" name="feedback" value="положительное"
                 id="filter-positive" checked="">
               <label class="form__options-label form__options-label--radio" for="filter-positive">Скорее
                 положительное</label>
             </li>
-            <li class="form__options-item list-reset">
+            <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="radio" name="feedback" value="отрицательное"
                 id="filter-negative">
               <label class="form__options-label form__options-label--radio" for="filter-negative">Скорее
                 отрицательное</label>
             </li>
-            <li class="form__options-item list-reset">
+            <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="radio" name="feedback" value="затрудняюсь"
                 id="filter-difficult">
               <label class="form__options-label form__options-label--radio" for="filter-difficult">Затрудняюсь
@@ -104,24 +111,22 @@
         <fieldset class="form__fieldset form__fieldset--attractions">
           <h2 class="form__fieldset-title form__fieldset-title--lines">Посещенные достопримечательности:</h2>
           <ul class="form__options list-reset">
-            <li class="form__options-item list-reset">
+            <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="мост-дьявола"
                 id="devil-bridge" checked="">
               <label class="form__options-label form__options-label--check" for="devil-bridge">Мост Дьявола</label>
             </li>
-            <li class="form__options-item list-reset">
-
-
+            <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="гора-колокол"
                 id="bell-mountain" checked="">
               <label class="form__options-label form__options-label--check" for="bell-mountain">Гора-Колокол</label>
             </li>
-            <li class="form__options-item list-reset">
+            <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="attractions" value="Слайд-парк"
                 id="slide-park" checked="">
               <label class="form__options-label form__options-label--check" for="slide-park">Слайд-парк</label>
             </li>
-            <li class="form__options-item list-reset">
+            <li class="form__options-item">
               <input class="form__options-input visually-hidden" type="checkbox" name="attractions"
                 value="Красные-скалы" id="red-rocks">
               <label class="form__options-label form__options-label--check" for="red-rocks">Красные скалы</label>
@@ -134,40 +139,42 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--submit">
           <button class="form__submit" type="submit">Отправить отзыв</button>
-          <span class="form__note">*-обязательные поля</span>
+          <span class="form__note">* — обязательные поля</span>
         </fieldset>
       </form>
     </section>
   </main>
   <footer class="footer">
     <a href="#" class="footer__hesh">#visitsedona</a>
-    <ul class="footer__social social">
+    <ul class="footer__social social list-reset">
       <li>
         <a href="#" class="social__btn social__btn--vk">
           <span class="visually-hidden">В контакте</span>
-          <img src="img/vk.svg" alt="vkontakte" width="48" height="48">
+          <img src="img/icon-vk.svg" alt="vkontakte" width="48" height="48">
         </a>
       </li>
       <li>
         <a href="#" class="social__btn social__btn--telegram">
           <span class="visually-hidden">Телеграм</span>
-          <img src="img/telegram.svg" alt="telegram" width="48" height="48">
+          <img src="img/icon-telegram.svg" alt="telegram" width="48" height="48">
         </a>
       </li>
       <li>
         <a href="#" class="social__btn social__btn--yt">
           <span class="visually-hidden">Ютуб</span>
-          <img src="img/youtube.svg" alt="youtube" width="48" height="48">
+          <img src="img/icon-youtube.svg" alt="youtube" width="48" height="48">
         </a>
       </li>
     </ul>
     <div class="footer__developer">
       <p>Разработано</p>
-      <a href="https://htmlacademy.ru/" class="footer__academy">
-        <img src="img/htmlacademy.svg" width="27" height="35" alt="htmlacademy">
+      <a class="footer__developer-link" href="https://htmlacademy.ru/">
+        <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="htmlacademy">
       </a>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
