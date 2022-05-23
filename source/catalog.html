@@ -3,10 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="no-js">
   <header class="header">
     <nav class="navigation">
       <a class="navigation__logo" href="index.html">
@@ -47,9 +52,20 @@
       </div>
     </section>
     <section class="catalog">
-      <ul class="catalog__list">
+      <ul class="catalog__list list-reset">
         <li class="catalog__item">
-          <img src="img/catalog/open-spaces.jpg" width="280" height="280" alt="Неродные просторы">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/gallery-1-desktop@1x.webp 1x, img/gallery-1-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/gallery-1-tablet@1x.webp 1x, img/gallery-1-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/gallery-1-mobile@1x.webp 1x, img/gallery-1-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)"
+              srcset="img/gallery-1-desktop@1x.jpg 1x, img/gallery-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/gallery-1-tablet@1x.jpg 1x, img/gallery-1-tablet@2x.jpg 2x">
+            <img src="img/catalog/open-spaces.jpg" width="280" height="280" alt="Неродные просторы">
+          </picture>
           <div class="catalog__container">
             <div class="catalog__description">
               <h2 class="catalog__title">Неродные просторы</h2>
@@ -62,7 +78,19 @@
         </li>
         <li class="catalog__item">
           <div class="catalog__img">
-            <img src="img/catalog/vegetation.jpg" width="280" height="280" alt="Местная растительность">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery-2-desktop@1x.webp 1x, img/gallery-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/gallery-2-tablet@1x.webp 1x, img/gallery-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery-2-mobile@1x.webp 1x, img/gallery-2-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                srcset="img/gallery-2-desktop@1x.jpg 1x, img/gallery-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/gallery-2-tablet@1x.jpg 1x, img/gallery-2-tablet@2x.jpg 2x">
+              <img src="img/catalog/vegetation.jpg" width="280" height="280" alt="Местная растительность">
+            </picture>
           </div>
           <div class="catalog__container">
             <div class="catalog__description">
@@ -76,7 +104,19 @@
         </li>
         <li class="catalog__item">
           <div class="catalog__img">
-            <img src="img/catalog/north.jpg" width="280" height="280" alt="Дорога на север">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery-3-desktop@1x.webp 1x, img/gallery-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/gallery-3-tablet@1x.webp 1x, img/gallery-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery-2-mobile@1x.webp 1x, img/gallery-3-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                srcset="img/gallery-3-desktop@1x.jpg 1x, img/gallery-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/gallery-3-tablet@1x.jpg 1x, img/gallery-2-tablet@2x.jpg 2x">
+              <img src="img/catalog/north.jpg" width="280" height="280" alt="Дорога на север">
+            </picture>
           </div>
           <div class="catalog__container">
             <div class="catalog__description">
@@ -90,7 +130,19 @@
         </li>
         <li class="catalog__item">
           <div class="catalog__img">
-            <img src="img/catalog/bridge.jpg" width="280" height="280" alt="Мост дьявола">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery-4-desktop@1x.webp 1x, img/gallery-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/gallery-4-tablet@1x.webp 1x, img/gallery-4-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery-4-mobile@1x.webp 1x, img/gallery-4-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                srcset="img/gallery-4-desktop@1x.jpg 1x, img/gallery-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/gallery-4-tablet@1x.jpg 1x, img/gallery-4-tablet@2x.jpg 2x">
+              <img src="img/catalog/bridge.jpg" width="280" height="280" alt="Мост дьявола">
+            </picture>
           </div>
           <div class="catalog__container">
             <div class="catalog__description">
@@ -112,7 +164,20 @@
       </div>
 
       <div class="video__img">
-        <img src="img/video.jpg" width="280" height="177" alt="Видео">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img src="img/video.jpg" width="280" height="177" alt="Видео">
+        </picture>
+        <a class="video__play" href="#">
+          <span class="visually-hidden">Воспроизвести видео</span>
+        </a>
       </div>
     </section>
 
